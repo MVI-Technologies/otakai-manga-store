@@ -1,0 +1,15 @@
+{
+  "name": "otakai-manga-store",
+  "description": "Premium landing page for manga stores and collector boutiques. Vibrant crimson accents (#ff4757), dark aesthetic, customized animated background, customized chatbot curator Mika, Specialties categories, active WhatsApp quotes, and a modern product showcase.",
+  "style": ["premium", "dark", "geek", "immersive", "anime"],
+  "bestFor": ["livrarias", "colecionáveis", "mangás", "geek-boutique"],
+  "sections": ["hero", "sobre-proof", "categorias", "manga-showcase", "como-funciona", "depoimentos", "faq", "cotacao-wizard"],
+  "primaryColor": "black",
+  "accentColor": "crimson",
+  "displayFont": "Playfair Display",
+  "bodyFont": "Inter",
+  "usageCount": 1,
+  "nichoHistory": ["livraria-geek", "mangás"],
+  "lastUsed": "2026-05-31",
+  "createdAt": "2026-05-31"
+}
