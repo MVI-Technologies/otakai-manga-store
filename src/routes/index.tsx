@@ -166,7 +166,7 @@ function Hero({ onOpenBooking }: HeroProps) {
           <div className="relative overflow-hidden border border-border">
             <img
               src={advogadoImg}
-              alt="Retrato do Dr. Marcos Montenegro, advogado trabalhista"
+              alt="Prateleiras repletas de mangás na Otakai Manga Store"
               width={1088}
               height={1344}
               className="w-full aspect-[4/5] object-cover grayscale hover:grayscale-0 transition-all duration-700 group-hover:scale-105"
@@ -632,7 +632,7 @@ function LocationSection() {
           <div className="lg:col-span-5 space-y-6">
             <div className="space-y-2">
               <span className="font-mono text-[10px] text-accent tracking-widest uppercase">// NOSSO QG</span>
-              <h2 className="font-display text-5xl md:text-6xl text-white uppercase leading-none">QG HELIX MANGÁS</h2>
+              <h2 className="font-display text-5xl md:text-6xl text-white uppercase leading-none">QG OTAKAI STORE</h2>
             </div>
             
             <p className="text-muted-foreground text-sm leading-relaxed max-w-md">
@@ -672,7 +672,7 @@ function LocationSection() {
               allowFullScreen={false}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Localização do Escritório Dr. Marcos Montenegro no Google Maps"
+              title="Localização da Otakai Store no Google Maps"
               className="absolute inset-0 opacity-90 hover:opacity-100 transition-opacity duration-300"
             />
           </div>
@@ -699,7 +699,7 @@ function Footer() {
           <div className="grid grid-cols-2 gap-16">
             <div>
               <span className="block font-display text-xl mb-4 uppercase">Contato</span>
-              <p className="text-sm text-muted-foreground mb-2">contato@advocacia.com.br</p>
+              <p className="text-sm text-muted-foreground mb-2">contato@otakai.store</p>
               <p className="text-sm text-muted-foreground">{PHONE_DISPLAY}</p>
             </div>
             <div>

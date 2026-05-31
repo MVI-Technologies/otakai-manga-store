@@ -1,16 +1,16 @@
-# Montenegro Advocacia — Landing Page Trabalhista Premium
+# Otakai Manga Store — Landing Page Premium & Catálogo de Luxo
 
-Este projeto consiste em uma landing page premium de alta performance desenvolvida para o escritório **Montenegro Advocacia** (Dr. Marcos Montenegro), especializado em **Direito Trabalhista**.
+Este projeto consiste em uma landing page premium de alta conversão desenvolvida para a **Otakai Manga Store**, uma loja especializada em mangás colecionáveis, edições de luxo e importados sob encomenda.
 
-A aplicação foi planejada sob rigorosos padrões estéticos (minimalismo de luxo em tons escuros e detalhes em dourado accent) e técnicos, garantindo excelente responsividade, acessibilidade impecável, conversão otimizada e SEO avançado.
+A aplicação foi planejada sob rigorosos padrões estéticos (design imersivo escuro com acentos em vermelho carmesim vibrante `#ff4757`) e técnicos, garantindo excelente responsividade, acessibilidade e SEO avançado.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
 - **Core & Roteamento:** React, [TanStack Start / React Router](https://tanstack.com/router)
-- **Estilização:** CSS Customizado integrado ao Tailwind CSS
-- **Gerenciamento de Estado & Consultas:** TanStack React Query
+- **Estilização:** CSS Customizado integrado ao Tailwind CSS (Tokens e Animações em `src/styles.css`)
+- **Gerenciamento de Estado:** React Hooks
 - **Ícones:** Lucide React & SVGs de alta fidelidade
 - **Deploy:** Otimizado para Vercel via Nitro Engine
 
@@ -18,28 +18,25 @@ A aplicação foi planejada sob rigorosos padrões estéticos (minimalismo de lu
 
 ## 💎 Soluções de UX & Funcionalidades Premium
 
-1. **Booking Wizard (Agendamento Inteligente):**
-   - Fluxo interativo de 4 passos para seleção de especialidade, escolha de data em calendário dinâmico de dias úteis, preenchimento de dados de contato sob sigilo e resumo com número de protocolo.
-   - Persistência dos dados agendados no `localStorage` sob a chave `advogado_conectado_bookings`.
+1. **Ken Burns Animated Hero Background:**
+   - Efeito imersivo de colagem de painéis de mangás clássicos em tons escuros no fundo do Hero, utilizando transições CSS suaves controladas pela classe `.animate-pan-bg`.
 
-2. **Dra. Carolina (Assistente Virtual):**
-   - Chatbot de conversão proativo e automatizado no canto inferior direito para filtrar e direcionar as dúvidas mais recorrentes de Direito Trabalhista (horas extras, reversão de justa causa, rescisões e acordos).
+2. **Manga Showcase (Catálogo À Venda):**
+   - Grade totalmente responsiva que exibe os títulos em destaque no catálogo (ex: Berserk Luxo, Chainsaw Man, One Piece e Demon Slayer) com tags flutuantes inteligentes, valores monetários bem legíveis e links dinâmicos integrados ao WhatsApp para simplificar a encomenda com apenas 1 clique.
 
-3. **Métricas Stacked FAB (WhatsApp Flutuante):**
-   - Botão de WhatsApp em verde brilhante tradicional (`#25D366`) empilhado verticalmente logo acima do assistente virtual para proporcionar contato humano direto e instantâneo com um clique.
+3. **Mika - A Curadora Virtual (Chatbot Otaku):**
+   - Chatbot interativo e proativo localizado no canto inferior direito para guiar novos colecionadores, esclarecer prazos de importação, tirar dúvidas de frete e recomendar títulos.
 
-4. **Conversão Mid-Page & Depoimentos:**
-   - Banner horizontal de alta visibilidade com iluminação sutil dourada para capturar a atenção durante a rolagem.
-   - Seção de depoimentos de clientes atendidos com rating visual de **5 estrelas douradas em vetor SVG**.
+4. **Curadoria Especial & Encomenda Customizada:**
+   - Fluxo interativo de curadoria (`BookingWizard`) e formulário de orçamento de volumes raros com cotações automáticas e geração de tickets integrados ao WhatsApp.
 
 ---
 
 ## ♿ Acessibilidade (WCAG 2.1 AA) & SEO
 
-- **Sensibilidade a Movimento:** Suporta a diretiva `@media (prefers-reduced-motion: reduce)`, desativando de forma elegante todas as animações e transições do site caso o usuário possua restrições.
-- **Navegação por Teclado:** Focos interativos (`focus-visible`) visíveis e customizados com anel dourado em todos os links e botões.
-- **Semântica:** Formulário de viabilidade estruturado com agrupamento `<fieldset>` e legenda `<legend>` acessível a leitores de tela.
-- **SEO Local:** Injeção de metadados avançados estruturados **Schema JSON-LD** de categoria `LegalService` no cabeçalho do documento, elevando o posicionamento orgânico e facilitando a exibição no Google Knowledge Panel de São Paulo.
+- **Sensibilidade a Movimento:** Suporta a diretiva `@media (prefers-reduced-motion: reduce)`, desativando as animações pesadas do Hero e do painel para usuários com restrições motoras/vestibulares.
+- **Favicon & OG Avançado:** Favicon customizado minimalista em formato SVG e tags de Open Graph completas pré-configuradas no `head` do roteador para compartilhamentos otimizados em redes sociais e WhatsApp.
+- **Navegação Semântica:** Utilização de tags HTML5 estruturadas (`<nav>`, `<section>`, `<figure>`, `<blockquote/>`, etc.) com foco customizado e claro.
 
 ---
 
@@ -49,9 +46,9 @@ A aplicação foi planejada sob rigorosos padrões estéticos (minimalismo de lu
 /
 ├── public/                 # Favicon.svg e ativos estáticos puros
 ├── src/
-│   ├── assets/             # Imagens corporativas otimizadas
-│   ├── components/         # Chatbot.tsx, BookingWizard.tsx e UI Components
-│   ├── routes/             # Rotas e páginas estruturadas via TanStack Router
+│   ├── assets/             # Imagens e capas de mangás otimizadas
+│   ├── components/         # Chatbot.tsx, BookingWizard.tsx e componentes reutilizáveis
+│   ├── routes/             # Rotas estruturadas via TanStack Router
 │   ├── styles.css          # Design System tokens, animações e estilos globais
 │   └── tsconfig.json       # Definições de compilação TypeScript
 ```
@@ -62,19 +59,10 @@ A aplicação foi planejada sob rigorosos padrões estéticos (minimalismo de lu
 
 ### Iniciar servidor de desenvolvimento:
 ```bash
-npm run dev
+bun dev
 ```
 
-### Compilar para produção (Vercel/Nitro):
+### Compilar para produção (Vercel):
 ```bash
-npm run build
+bun run build
 ```
-
----
-
-## 🌐 Deploy na Vercel
-
-O projeto está configurado para deploy automático na Vercel. Ao conectar seu repositório do GitHub no painel da Vercel:
-1. O framework **TanStack Start** será detectado de forma nativa.
-2. Defina o comando de build como `npm run build`.
-3. A Vercel configurará as funções serverless necessárias automaticamente.
